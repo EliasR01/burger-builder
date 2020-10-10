@@ -1,0 +1,61 @@
+.SideMenu {
+    position: fixed;
+    width: 200px;
+    max-width: 250px;
+    height: 100%;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    padding: 32px 16px;
+    box-sizing: border-box;
+    transition: transform 1s ease-in-out;
+}
+
+.Init {
+    background-color: #703B09;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 90;
+    top: 0;
+    padding: 15px 0 0 10px;
+}
+
+.Closed {
+    color: red;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    z-index: 80;
+}
+
+.Navigation {
+    padding: 30px 20px ;
+}
+
+@media (min-width: 500px) {
+    .SideMenu {
+        display: none;
+    }
+    .Init {
+        display: none;
+    }
+}
+
+.Logo {
+    height: 50px;
+    top: 0;
+    padding-left: 48px;
+}
+
+.Open {
+    transform: translateX(0);
+}
+
+.Closed {
+    transform: translateX(-100%);
+}
